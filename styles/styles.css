@@ -16,7 +16,7 @@ hr {
     border: none;
     background-color: #e8e8e8;
     color: #e8e8e8;
-    height: 1px;
+    height: 3px;
     margin: 40px 0 50px;
 }
 a:link, a:visited {
@@ -25,7 +25,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: #ff0000;
+    font-weight: 600;
 }
 h1 {
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
@@ -49,30 +49,15 @@ h4 {
     font-size: 1.25rem;
 }
 h5 {
+    font-weight: 600;
     font-size: 0.93rem;
     color: #b5b5b5;
 }
 p {
-    margin-top: 1vw;
+    padding-top: 1vw;
+    margin-bottom: 0vw;
     font-size: 1rem;
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
-}
-
-.page-content {
-    flex: 1;
-}
-.page-wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas:
-            "header"
-            "nav"
-            "content"
-            "sidebar"
-            "ad"
-            "footer";
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .site-title {
@@ -85,118 +70,53 @@ p {
     text-transform: none;
 }
 
-[container] {
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    min-width: 0;
-    max-width: 100%;
-}
-
-[container="right"] {
-    float:right;
-    text-align: right;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-    max-width: 50%;
-}
-[container="left"] {
-    margin: 3vw 9vw;
-    float:left;
-    text-align: left;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    max-width: 50%;
-}
-
 header {
-    grid-area: header;
-    min-width:100%;
-    height: 95px;
-    background-color: #f4f1ef;
-    border-bottom: 3px solid #e8e8e8;
-    margin: 0 auto;
-
-}
-.navbar-wrapper {
-    max-width: 100%;
+    width:100%;
     height: 95px;
     background-color: #f4f1ef;
     border-bottom: 3px solid #e8e8e8;
     margin: 0 auto;
 }
-.navbar {
-    margin-top: 8px;
-    margin-right: 8px;
-    float: right;
+.navigation-container {
+    padding-top: 2vw;
 }
 .navbar-contact {
-    float:right;
+    float:left;
     position: relative;
     display: flex;
     text-decoration: none;
-    padding-right: 2vw;
-    margin: 2px 2px 0px 0px;
 }
-.navbar-contact a {
-    padding: 4px 6px;
+.navbar{
+    float: right;
 }
-.main-nav {
-    display:flex;
-    margin: 0px 0px 2px 20px;
-    font-size: 1.5rem;
-    font-weight: 520;
-    padding: 0;
-    list-style: none;
-}
-.main-nav li {
-    float:left;
-    position: relative;
-    margin-top: 10px;
-    padding-right: 2vw;
-}
+
 
 .sidebar {
     position: fixed;
-    width: 7%;
-    top: 40vw;
+    width: 10%;
+    height: 20%;
+    bottom: 3vw;
     left: 5%;
     background: rgb(222, 218, 219, 0.3);
     padding: 0px 20px;
+}
 
-}
-.sidebar-content {
-    margin-top: 12px;
-    padding-right: 60px;
-    list-style: none;
-    padding-inline-start: 0vw;
-}
-.sidebar-content li {
+
+.sidebar-item {
     padding: 4px 6px;
-    font-size: 15.75px;
+    font-size: 1.5vw;
 }
 
-.sidebar-contact {
-    margin-top: 6px;
-    float:left;
-    position: relative;
-    display: flex;
-    text-decoration: none;
+@media (max-width: 750px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 .home-about-wrapper {
     grid-area: content;
     background-color: #ffffff;
     margin: 4vw 5vw 4vw 5vw;
-}
-
-.home-about {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5vw;
-
 }
 
 .home-about .home-about-image-wrapper {
@@ -206,19 +126,13 @@ header {
 
 }
 
-.home-about-content {
-    flex: 1;
-    justify-self: flex-end;
-    font-size: 1rem;
-    font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
-}
 .link {
     font-weight: 600;
 }
-.description {
+.indent {
     margin: 25px;
 }
-.description * {
+.job * {
     margin: 2px 0;
 }
 
@@ -262,6 +176,27 @@ header {
 .media-card img {
     height: 75%;
 }
+
+.seemore {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'LL Brown Light Web', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 0.120em;
+}
+.readmore {
+    margin-top: 0px;
+    display: inline-flex;
+    align-items: center;
+    text-transform: lowercase;
+    font-family: 'LL Brown Light Web', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 0.120em;
+}
+
 
 .card {
     width: 30%;

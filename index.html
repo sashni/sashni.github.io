@@ -4,119 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <title>Ashni Shah</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <script src="jquery-3.4.0.min.js"></script>
-    <script src="scripts/navbar.js"></script>
 </head>
 <body>
 <!-- comment -->
 <div class="page-wrapper">
 <header id="header">
-    <div container="left">
-        <!--<div class="site-title">Ashni Shah</div>-->
-    </div>
-    <div container="right">
-        <div class="navbar-wrapper">
-            <nav class="navbar">
-                <div class="navbar-contact">
-                    <a href="http://www.linkedin.com/in/ashni-shah" target="_blank"><img src="images/linkedin.png" height="30"></a>
-                    <a href="https://www.github.com/sashni" target="_blank"><img src="images/github.png" height="30"></a>
-                    <a href="mailto:sashni@bu.edu" target="_blank"><img src="images/email.png" height="30"></a>
-                </div><br>
-                <ul class="main-nav" id="js-menu">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="https://github.com/sashni/sashni.github.io/blob/master/pages/resume.pdf">Resume</a></li><br>
-                    <!--<li><a href="projects.html">Projects</a></li>
-                    <li><a href="index.html">Research</a></li>-->
-                </ul>
-            </nav>
+    <br>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="nav">
+                <a class="nav-link active" href="mailto:sashni@bu.edu" target="_blank"><img src="images/email.png" class="img-fluid float-left max-width"></a>
+                <a class="nav-link" href="http://www.linkedin.com/in/ashni-shah" target="_blank"><img src="images/linkedin.png" class="img-fluid float-left"></a>
+                <a class="nav-link" href="https://www.github.com/sashni" target="_blank"><img src="images/github.png" class="img-fluid float-left"></a>
+            </ul>
         </div>
+        <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-content" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://github.com/sashni/sashni.github.io/blob/master/pages/resume.pdf">Resume</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="pages/projects.html">Projects</a>
+                    </li>
+                    <!--<li class="nav-item active">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>-->
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </div>
     </div>
 </header>
 
 <main class="page-content">
-<div class="home-about-wrapper">
-<div class="home-about">
-    <div class="home-about-image-wrapper">
-        <img src="images/profile.png" height="330" width="310">
-    </div>
-    <div class="home-about-content">
-        <h1>Hi, I'm Ashni.</h1>
-        <p>
-        I'm a software engineer, born and raised in Nairobi, Kenya, studying in the United States.<br> I am passionate about working on meaningful projects and empowering people through technology. <br><br>
-        I recently graduated from Boston University in May 2020, majoring in Computer Science with a minor in Business Administration & Management.
-        While at BU, I worked as a software engineer intern at the <a class="link" href="https://sail.bu.edu" target="_blank">Software & Application Innovation Lab</a>, and
-        led the <a class="link" href="https://www.biztechclub.com">BizTech</a> student club as the Director of Operations, helping students explore opportunities in the intersection of business and technology.<br><br>
+<div class="container">
+    <br>
+    <div class="media">
+        <img src="images/profile.png" class="mr-3" alt="Profile image" width="370">
+        <div class="media-body">
+            <h1 class="mt-0">Hi, I'm Ashni</h1>
+            <p>
+                I'm a software engineer, born and raised in Nairobi, Kenya, studying in the United States.<br> I am passionate about working on meaningful projects and empowering people through technology. <br><br>
+                I recently graduated from Boston University in May 2020, majoring in Computer Science with a minor in Business Administration & Management.
+                While at BU, I worked as a software engineer intern at the <a class="link" href="https://sail.bu.edu" target="_blank">Software & Application Innovation Lab</a>, and
+                led the <a class="link" href="https://www.biztechclub.com">BizTech</a> student club as the Director of Operations, helping students explore opportunities in the intersection of business and technology.<br><br>
 
-        If you have any questions, anything from studying in the United States, to starting out your career/education in computer science, feel free to reach out! I’ve been in your shoes, and I’m always happy to help!<br><br>
+                If you have any questions, anything from studying in the United States, to starting out your career/education in computer science, feel free to reach out! I’ve been in your shoes, and I’m always happy to help!<br><br>
 
-        I am also currently searching for full-time software engineering roles in the United States or United Kingdom so let me know if you or your company are hiring!
-        </p>
-    </div>
-</div>
-</div>
-
-<!-- Sidebar Navigation -->
-<!--<div id="wrapper" class="sidebar-wrapper">-->
-<aside class="sidebar-wrapper">
-    <div id="sidebar" class="sidebar">
-        <ul class="sidebar-content">
-        <li><a href="index.html">About</a></li>
-        <li><a href="https://github.com/sashni/sashni.github.io/blob/master/pages/resume.pdf">Resume</a></li>
-        <li><a href="pages/projects.html">Projects</a></li>
-        <!--<li><a href="index.html">Research</a></li>
-        <li><a href="contact.html">Contact</a></li>-->
-        </ul>
-    </div>
-</aside>
-
-
-
-<section class="board-section">
-<!-- Skills -->
-<div id="skills" class="board">
-    <div class="board-content">
-        <h2>Skills</h2>
-        <div class="description">
-            <span class="title"> Languages:</span> Python, Java, JavaScript, TypeScript, HTML, CSS, SQL, Go, C, C++<br>
-            <span class="title"> Frameworks:</span> Angular, Ionic, Node.js, Express, Flask<br>
-            <span class="title"> Other:</span> Amazon Web Services (AWS)
+                I am also currently searching for full-time software engineering roles in the United States or United Kingdom so let me know if you or your company are hiring!
+            </p>
         </div>
     </div>
 </div>
+<hr>
 
-<!-- Experience -->
-<div id="experience" class="board">
-    <h2>Notable Experiences</h2>
-    <div class="board-content">
-
-        <div class="description">
-            <h3>Boston University</h3>
-            <h4>Directed Research Study</h4>
-            <p>Privacy-preserving machine learning model, using secure multi-party computation (MPC)</p>
-            <h5>January 2020 - May 2020</h5>
+<div class="container">
+    <!-- Skills -->
+    <div id="skills" class="board">
+        <div class="board-content">
+            <h2>Skills</h2>
+            <div class="indent">
+                <span class="title"> Languages:</span> Python, Java, SQL, C, JavaScript, TypeScript, HTML, CSS<br>
+                <span class="title"> Frameworks:</span> Angular, Ionic, Express, Flask, React<br>
+                <span class="title"> Other:</span> Amazon Web Services (AWS), Node.js
+            </div>
         </div>
+    </div>
 
-        <div class="description">
-        <h3>Software & Application Lab (SAIL)</h3>
-            <h4>Software Engineer Intern</h4>
-            <h5>May 2019 - May 2020</h5>
-        </div>
+    <!-- Experience -->
+    <div id="experience" class="board">
+        <h2>Notable Experiences</h2>
+        <div class="board-content">
 
-        <div class="description">
-        <h3>Fire Tech Camp</h3>
-        <h4>Python Tutor</h4>
-        <h5>July 2018 - August 2018</h5>
-        </div>
+            <div class="indent">
+                <h3>Boston University</h3>
+                <h4>Directed Research Study</h4>
+                <h5>January 2020 - May 2020</h5>
+                <p><span>&#8226;</span> Designed a secure multi-party computation (MPC) algorithm for a privacy-preserving machine
+                    learning model, to predict public opinion election polling results using web browsing histories, while
+                    protecting parties’ inputs. </p>
+                <!--<a class="readmore" href="#">read more </a>-->
 
-        <div class="description">
-        <h3>Business & Technology Club (BizTech)</h3>
-        <h4>Director of Operations - E-Board</h4>
-        <h5>September 2018 - December 2019</h5>
+            </div>
+
+            <div class="indent">
+            <h3>Software & Application Lab (SAIL)</h3>
+                <h4>Software Engineer Intern</h4>
+                <h5>May 2019 - May 2020</h5>
+                <p><span>&#8226;</span> Contributed to JIFF, a JavaScript framework that supports secure multi-party computation (MPC) and enables web developers to build secure applications.</p>
+                <!--<a class="readmore" href="#">read more </a>-->
+                <p><span>&#8226;</span> Co-engineered front-end mobile application, Game-Plan, with Angular and Ionic to help people with
+                    Intellectual and Developmental Disabilities (IDD) plan and navigate their day-to-day lives.</p>
+                <a class="readmore" href="#">read more </a>
+            </div>
+
+            <div class="indent">
+            <h3>Fire Tech Camp</h3>
+            <h4>Python Tutor</h4>
+            <h5>July 2018 - August 2018</h5>
+                <p><span>&#8226;</span> Instructed beginner and advanced “Teen Coding with Python” courses with challenge-based learning
+                    and examples tailored to students’ interests to empower them to use technology to approach and
+                    solve problems. Awarded Star Tutor of the Week.
+                </p>
+            </div>
+
+            <div class="indent">
+            <h3>Business & Technology Club (BizTech)</h3>
+            <h4>Director of Operations - E-Board</h4>
+            <h5>September 2018 - December 2019</h5>
+            </div>
         </div>
     </div>
 </div>
 
+
+<div class="container">
+    <h2>Projects</h2>
+
+    <div class="card-group">
+        <a href="pages/gameplan.html" class="card-link">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Game-Plan</h4>
+                    <p class="card-text">Mobile application to help people with Intellectual and Developmental Disabilities navigate barriers.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="" target="_blank" class="card-link">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">JIFF</h4>
+                    <p class="card-text">JavaScript framework enabling building of secure web applications using secure multi-party computation, MPC.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="" target="_blank" class="card-link">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h4 class="card-title">Bliss International Website</h4>
+                    <p class="card-text">Online company store website to showcase products, place order inquiries and create inventory system.</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+    <a class="seemore" href="pages/projects.html">See More projects + </a>
+</div>
+    <br>
+
+<div class="container">
+<h2>Media</h2>
+<div class="card-group">
+    <a href="#" class="card-link">
+        <div class="card" style="width: 18rem;">
+            <img src="images/report.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">BU Annual Report</h4>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.firetechcamp.com/news-and-media/tips-boston-university-computer-science-student/" target="_blank" class="card-link">
+        <div class="card" style="width: 18rem;">
+            <img src="images/firetech.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Fire Tech Camp</h4>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.bu.edu/hic/2019/07/20/summer-2019-sail-interns/" target="_blank" class="card-link">
+        <div class="card" style="width: 18rem;">
+            <img src="images/meet.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">SAIL: Meet the Interns</h4>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
 <!--<div id="projects" class="board">
     <h2>Work</h2>
     <div class="card-section">
@@ -126,7 +214,7 @@
 
     </div>
 </div>-->
-
+<!--
 <div id="media" class="board">
 <h2>Media</h2>
 <div class="card-section">
@@ -143,7 +231,7 @@
 </div>
 </div>
 
-</section>
+</div>-->
 
 </main>
 </div>
