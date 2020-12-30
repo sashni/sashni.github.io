@@ -54,12 +54,4 @@ p,li {
     font-size: 1rem;
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
 }
-.site-header {
-    width:100%;
-    height: 95px;
-    border-bottom: 3px solid #e8e8e8;
-    margin: 0 auto;
-    display: flex;
-}
-
 
