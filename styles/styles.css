@@ -1,216 +1,65 @@
 html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 body {
-    margin: 0;
-    width: 100%;
-    font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
-    text-rendering: optimizeLegibility;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  width: 100%;
+  font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
+  text-rendering: optimizeLegibility;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 hr {
     border: none;
     background-color: #e8e8e8;
     color: #e8e8e8;
     height: 3px;
-    margin: 40px 0 50px;
+    margin: 20px 0 10px;
 }
 a:link, a:visited {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
-
 a:hover {
-    font-weight: 600;
+  font-weight: 600;
 }
 h1 {
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
     line-height: 1.2em;
-    font-size: calc(3.84vw + 1rem);
     color: #e7530b;
-    margin: 0px;
+    margin-left: 2.5rem;
 }
 h2 {
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
     line-height: 1.5em;
     font-size: 1.8rem;
-    color: #b01506;
-    margin: 0px;
-}
-h1, h2, h3 {
-    padding: 0;
+    font-weight: 600;
+    color: #e7530b;
 }
 h4 {
-    font-weight: normal;
-    font-size: 1.25rem;
-}
-h5 {
+    padding-top: 0vw;
     font-weight: 600;
-    font-size: 0.93rem;
-    color: #b5b5b5;
+    font-size: 1.3rem;
 }
-p {
+h4 p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+p,li {
     padding-top: 1vw;
     margin-bottom: 0vw;
     font-size: 1rem;
     font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
 }
-
-.site-title {
-    font-family: "NeueHaasUnicaPro-Regular", "HelveticaNeue", "Helvetica", "sans-serif";
-    color: black;
-    font-style: normal;
-    font-size: 40px;
-    line-height: 1em;
-    letter-spacing: 0em;
-    text-transform: none;
-}
-
-header {
+.site-header {
     width:100%;
     height: 95px;
-    background-color: #f4f1ef;
     border-bottom: 3px solid #e8e8e8;
     margin: 0 auto;
-}
-.navigation-container {
-    padding-top: 2vw;
-}
-.navbar-contact {
-    float:left;
-    position: relative;
     display: flex;
-    text-decoration: none;
 }
-.navbar{
-    float: right;
-}
-
-
-.sidebar {
-    position: fixed;
-    width: 10%;
-    height: 20%;
-    bottom: 3vw;
-    left: 5%;
-    background: rgb(222, 218, 219, 0.3);
-    padding: 0px 20px;
-}
-
-
-.sidebar-item {
-    padding: 4px 6px;
-    font-size: 1.5vw;
-}
-
-@media (max-width: 750px) {
-    .sidebar {
-        display: none;
-    }
-}
-
-.home-about-wrapper {
-    grid-area: content;
-    background-color: #ffffff;
-    margin: 4vw 5vw 4vw 5vw;
-}
-
-.home-about .home-about-image-wrapper {
-    flex: 1;
-    height: 100%;
-    max-width: 350px;
-
-}
-
-.link {
-    font-weight: 600;
-}
-.indent {
-    margin: 25px;
-}
-.job * {
-    margin: 2px 0;
-}
-
-.subtext, .subtext li {
-    padding-top: 0px;
-    font-size: 1.1rem;
-}
-.title {
-    font-weight: bold;
-}
-
-
-.board-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 5vw 5vw 20vw;
-}
-.board {
-    width:100%;
-    position: relative;
-    margin-top: 0vw;
-    margin-bottom: 2vw;
-    background-color: #ffffff;
-}
-
-
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-.media-card {
-    width: 23%;
-    position: relative;
-    margin: 20px 0;
-    margin-right: 1%;
-    border: 1px solid #e8e8e8;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
-}
-.media-card img {
-    height: 75%;
-}
-
-.seemore {
-    display: inline-flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-family: 'LL Brown Light Web', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 0.7em;
-    letter-spacing: 0.120em;
-}
-.readmore {
-    margin-top: 0px;
-    display: inline-flex;
-    align-items: center;
-    text-transform: lowercase;
-    font-family: 'LL Brown Light Web', Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 0.7em;
-    letter-spacing: 0.120em;
-}
-
-
-.card {
-    width: 30%;
-    position: relative;
-    margin: 20px 0;
-    margin-right: 3%;
-    border: 1px solid #e8e8e8;
-}
-.card-content {
-    padding: 10px 15px;
-}
-footer {
-    background-color: rgb(222, 218, 219, 0.3);
-}
-
 
 

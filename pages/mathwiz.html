@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0 user-scalable=no">
     <title>Ashni Shah</title>
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="../styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<!-- Projects -->
 <header class="site-header">
     <div class="container"><br>
         <div class="row">
@@ -33,47 +38,28 @@
     </div>
 </header>
 
-
 <div class="container">
-  <br><h2 class="text-center">Projects</h2>
-<div class="card-group">
-    <div class="card mb-2">
-        <img src="" class="card-img-top" style="height:200px" alt="bombuilder">
-        <div class="card-body">
-            <a href="" class="card-title text-center disabled">
-                <h4>bombuilder 2.0</h4>
-            </a>
-        </div>
+  <br>
+  <h2 class="text-center">Math Wizard<br>
+    <a class="btn btn-info btn-sm" role="button" href="https://github.com/sashni/CS411">view Github repository</a>
+  </h2>
+  <p class="text-center"> Every student knows typing math equations can be such a pain.<br>
+    Sign in with Google Authentication, upload an image of any math equation (printed or written) to Math Wizard and we'll find the solution for you.<br>
+  </p>
+  <p class="text-center">Math Wizard uses the MathPix API to detect and parse math symbols in the uploaded image, then   sends this parsed equation to the WolframAlpha API to find solutions to the equation.
+  </p>
+  <p class="text-center">
+    <b>Technologies Used:</b> Node.js, mongoDB, GoogleOAuth<br>
+    <b>Background:</b> CS411 @ Boston University: Software Engineering Class Project<br>
+  </p>
+  <br>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col">
+        <img src="../images/mathwiz.png" width="500"/>
     </div>
-    <div class="card mb-2">
-        <img src="../images/gameplan.png" class="card-img-top" style="height: 190px; width: 350px" alt="GamePlan">
-        <div class="card-body">
-        <a href="../pages/gameplan.html" class="card-title text-center">
-          <h4>Game-Plan</h4>
-        </a>
-        </div>
-    </div>
+    <div class="col-3"></div>
+  </div><br>
 </div>
-<div class="card-group">
-  <div class="card mb-2">
-    <img src="../images/jiff.png" class="card-img-top" style="height:200px" alt="JIFF">
-    <div class="card-body">
-      <a href="../pages/jiff.html" class="card-title text-center">
-        <h4>JIFF</h4>
-      </a>
-    </div>
-  </div>
-  <div class="card mb-2">
-    <img src="../images/mathwiz.png" class="card-img-top" style="height:200px" alt="MathWiz">
-    <div class="card-body">
-      <a href="../pages/mathwiz.html" class="card-title text-center">
-        <h4>Math Wizard</h4>
-      </a>
-    </div>
-  </div>
-</div>
-</div>
-
-
 </body>
 </html>
